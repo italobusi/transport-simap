@@ -1,5 +1,5 @@
 ---
-title: "Service & Infrastructure Maps (SIMAP) for Transport Networks"
+title: "Applicability of Service & Infrastructure Maps (SIMAP) to Transport Networks"
 abbrev: "Transport SIMAP"
 category: info
 
