@@ -19,11 +19,11 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Service & Infrastructure Maps (SIMAP) for Transport Networks"
+abbrev: "Transport SIMAP"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-busi-nmop-transport-simap-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
