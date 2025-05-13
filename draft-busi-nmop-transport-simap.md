@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: ""
+workgroup: "Network Management Operations"
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  group: "Network Management Operations"
+  type: ""
+  mail: "nmop@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/nmop/"
+  github: "italobusi/transport-simap"
+  latest: "https://italobusi.github.io/transport-simap/draft-busi-nmop-transport-simap.html"
 
 author:
  -
