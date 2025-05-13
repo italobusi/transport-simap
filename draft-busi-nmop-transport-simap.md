@@ -24,10 +24,19 @@ venue:
   latest: "https://italobusi.github.io/transport-simap/draft-busi-nmop-transport-simap.html"
 
 author:
- -
-    fullname: "italobusi"
-    organization: Your Organization Here
-    email: "italo.busi@huawei.com"
+  -
+    name: Italo Busi
+    org: Huawei Technologies
+    email: italo.busi@huawei.com
+  -
+    name: Haomian Zheng
+    org: Huawei Technologies
+    street: H1, Huawei Xiliu Beipo Village, Songshan Lake
+    city: Dongguan
+    region: Guangdong
+    code: 523808
+    country: China
+    email: zhenghaomian@huawei.com
 
 normative:
 
@@ -45,16 +54,49 @@ TODO Abstract
 
 TODO Introduction
 
+## Terminology
 
-# Conventions and Definitions
+# Overview of Key Requirements for Transport SIMAP
 
-{::boilerplate bcp14-tagged}
+TODO Overview of Key Requirements for Transport SIMAP
 
+## Resource and Bandwidth status
+
+## Delay Measurement
+
+## Availability
+
+## Real-time Evaluation (Risk?)
+
+# Use Cases
+
+TODO Use Cases
+
+## Planning and Service Provisioning Map
+
+## Alarm and Incident Map
+
+## Risk Prediction Map
+
+# YANG Models Applicability
+
+TODO YANG Models Applicability
+
+## Planning and Service Provisioning
+
+TODO Evaluate: OTN/WDM/ETH topology, Tunnel, client-signal, path computation models. Planning maybe a gap or Inventory (location) is sufficient
+
+## Alarm and Incident
+
+TODO Evaluate: RFC8632, Incident models
+
+## Risk Prediction
+
+TODO Evaluate: performance monitoring models
 
 # Security Considerations
 
 TODO Security
-
 
 # IANA Considerations
 
@@ -66,4 +108,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+TODO Acknowledgments
