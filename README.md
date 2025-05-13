@@ -1,8 +1,8 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# Service &amp; Infrastructure Maps (SIMAP) for Transport Networks
+# Applicability of Service &amp; Infrastructure Maps (SIMAP) to Transport Networks
 
-This is the working area for the individual Internet-Draft, "Service &amp; Infrastructure Maps (SIMAP) for Transport Networks".
+This is the working area for the individual Internet-Draft, "Applicability of Service &amp; Infrastructure Maps (SIMAP) to Transport Networks".
 
 * [Editor's Copy](https://italobusi.github.io/transport-simap/#go.draft-busi-nmop-transport-simap.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-busi-nmop-transport-simap)
