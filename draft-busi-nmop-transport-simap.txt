@@ -5,7 +5,7 @@
 Network Management Operations                                    I. Busi
 Internet-Draft                                                  H. Zheng
 Intended status: Informational                       Huawei Technologies
-Expires: 14 November 2025                                    13 May 2025
+Expires: 16 November 2025                                    15 May 2025
 
 
   Applicability of Service & Infrastructure Maps (SIMAP) to Transport
@@ -14,7 +14,11 @@ Expires: 14 November 2025                                    13 May 2025
 
 Abstract
 
-   TODO Abstract
+   This document explores the applicability of the Service &
+   Infrastructure Maps (SIMAP) concepts to transport networks and it
+   examines the YANG data models defined by the IETF to support the
+   requirements and use cases for SIMAP applicability to transport
+   networks.
 
 About This Document
 
@@ -49,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 November 2025.
+   This Internet-Draft will expire on 16 November 2025.
 
 Copyright Notice
 
@@ -84,14 +88,41 @@ Table of Contents
      4.3.  Risk Prediction
    5.  Security Considerations
    6.  IANA Considerations
+   7.  Normative References
    Acknowledgments
    Authors' Addresses
 
 1.  Introduction
 
-   TODO Introduction
+   The concept of Service & Infrastructure Maps (SIMAP) is being defined
+   in [I-D.ietf-nmop-simap-concept] together with a set of SIMP
+   requirements and use cases.
+
+   A transport network is a server-layer network designed to provide
+   connectivity services for a client-layer network to carry the client
+   traffic transparently across the server-layer network resources.
+
+   A transport network typically utilizes several different transport
+   technologies such as the Optical Transport Networks (OTN) or
+   Wavelength Division Multiplexing (WDM).
+
+   The concept of SIMAP applies to any type of networks, including but
+   not being limited to transport networks.
+
+   This document complements the definitions in
+   [I-D.ietf-nmop-simap-concept] providing specific requirements and use
+   cases for SIMAP applicability to transport networks.
+
+   It also examines the YANG data models defined by the IETF to support
+   these specific requirements and use cases at the northbound interface
+   of an optical network controller.
 
 1.1.  Terminology
+
+   The following terms are defined in [I-D.ietf-nmop-simap-concept] and
+   are not redefined here:
+
+   *  Service & Infrastructure Maps (SIMAP)
 
 2.  Overview of Key Requirements for Transport SIMAP
 
@@ -140,6 +171,15 @@ Table of Contents
 6.  IANA Considerations
 
    This document has no IANA actions.
+
+7.  Normative References
+
+   [I-D.ietf-nmop-simap-concept]
+              Havel, O., Claise, B., de Dios, O. G., and T. Graf,
+              "SIMAP: Concept, Requirements, and Use Cases", Work in
+              Progress, Internet-Draft, draft-ietf-nmop-simap-concept-
+              03, 3 March 2025, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-nmop-simap-concept-03>.
 
 Acknowledgments
 
