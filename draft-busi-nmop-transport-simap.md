@@ -45,16 +45,29 @@ informative:
 
 --- abstract
 
-TODO Abstract
-
+This document explores the applicability of the Service & Infrastructure Maps (SIMAP) concepts to transport networks and it examines the YANG data models defined by the IETF to support the requirements and use cases for SIMAP applicability to transport networks.
 
 --- middle
 
 # Introduction
 
-TODO Introduction
+The concept of Service & Infrastructure Maps (SIMAP) is being defined in {{!I-D.ietf-nmop-simap-concept}} together with a set of SIMP requirements and use cases.
+
+A transport network is a server-layer network designed to provide connectivity services for a client-layer network to carry the client traffic transparently across the server-layer network resources.
+
+A transport network typically utilizes several different transport technologies such as the Optical Transport Networks (OTN) or Wavelength Division Multiplexing (WDM).
+
+The concept of SIMAP applies to any type of networks, including but not being limited to transport networks.
+
+This document complements the definitions in {{!I-D.ietf-nmop-simap-concept}} providing specific requirements and use cases for SIMAP applicability to transport networks.
+
+It also examines the YANG data models defined by the IETF to support these specific requirements and use cases at the northbound interface of an optical network controller.
 
 ## Terminology
+
+The following terms are defined in {{!I-D.ietf-nmop-simap-concept}} and are not redefined here:
+
+- Service & Infrastructure Maps (SIMAP)
 
 # Overview of Key Requirements for Transport SIMAP
 
