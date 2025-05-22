@@ -5,7 +5,7 @@
 Network Management Operations                                    I. Busi
 Internet-Draft                                                  H. Zheng
 Intended status: Informational                       Huawei Technologies
-Expires: 16 November 2025                                    15 May 2025
+Expires: 23 November 2025                                    22 May 2025
 
 
   Applicability of Service & Infrastructure Maps (SIMAP) to Transport
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 16 November 2025.
+   This Internet-Draft will expire on 23 November 2025.
 
 Copyright Notice
 
