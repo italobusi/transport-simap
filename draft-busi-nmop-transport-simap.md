@@ -119,13 +119,34 @@ A transport network typically utilizes several different transport technologies 
 
       1. configures the connectivity service on the two devices at the edge of the just set up OTN tunnel.
 
-> Add some description about the top-down approach and multi-layer path computation/setup performed by optical controller
+The WDM path computation performed by the optical controller needs to have the complete visibility of all the resources within the WDM layer in order to compute the optimal feasible optical path, taking into account the characteristics (e.g., optical impairments) of the ROADM nodes, the capabilities of the transceivers. It also needs to know the existing OTSi signals within the optical network to determine the optical impairment impact of the existing OTSi signals on the optical feasibility of a new OTSi signal and vice versa, i.e., the impact of the new OTSi on the existing OTSi signals: see {{?Section 2.3.1 of ?I-D.ietf-ccamp-optical-impairment-topology-yang}}.
 
-> Describe why the optical controller needs to get the complete view of the optical resources (including the pluggable modules) although this might be controversial
+In order to provide the requested level of availability, optical path computation at any layer (e.g., OTN or WDM) shall be able to compute SRLG disjoint paths in order to avoid that a single failure would impact also the backup path.
 
-> Discuss about co-cabling and cotranching capability of the optical controller to improve the service provisioning with availability SLA
+Manual configuration of SRLG is error-prone because of human errors and the lack of complete information on how the physical infrastructure is built (e.g., where the fibers are physically lay down).
+
+The optical controller can implement advanced algorithms to automatically detect co-cabling (i.e., fibers which are assembled within the same cable) as well as co-trenching (i.e., cables which are lay down on the same trench). These automatic mechanisms can reduce the errors in provisioning SRLG information thus improving the provisioning of services with guaranteed availability.
+
+The mechanisms used by the optical controller to detect co-cabling and co-trenching are implementation specific and outside the scope of standardization. The Transport SIMAP reports the output of these mechanisms thought standardized network topology and inventory models.
 
 ## Alarm and Incident
+
+Alarm and Incident are defined in {{?I-D.ietf-nmop-terminology}}.
+
+In transport network an incident can cause alarms or state down on multiple tunnels and services. For example:
+- a fiber break will cause all the WDM tunnels routed through this fiber to go down;
+- a WDM tunnel failure will cause all the OTN tunnels routed through it to go down;
+- an OTN tunnel failure will cause all the services (e.g., CBR or Ethernet services) supported by it to go down.
+
+Note that, while usually an OTN tunnel can carry only one service, there are some cases where multiple services are multiplexed over the same OTN tunnel.
+
+When an accident occurs in the transport network, Transport SIMAP is able to report the root alarm/condition (e.g., the fiber break) that is associated with the incident and all the consequent alarms/conditions (e.g., WDM tunnels, OTN tunnels and services being down).
+
+This will allow the operator to know which tunnels and services are impacted by the incident and which is the root cause to be resolved in order to bring them up again.
+
+By supporting the co-cabling and co-trenching mechanisms, the Transport SIMAP can also provide a deeper analysis of the incident. For example, if a cable breaks, Transport SIMAP can report the cable break as the root cause for the consequent alarms reporting fiber breaks.
+
+{{?I-D.ietf-nmop-network-incident-yang}} provide also more details about incident management.
 
 ## Risk Prediction
 
@@ -133,7 +154,13 @@ A transport network typically utilizes several different transport technologies 
 
 > Provide more enhanced SD definitions (latency)
 
-> Need to notify the status of the protection/restoration after a failure occurs. The customer may request to reconfigure the service availability (e.g., from 1+1 to always-1+1) or do nothing.
+When a connectivity service with availability requirements is requested, the optical controller can decide to configure some resiliency (e.g., protection or restoration) mechanisms within the network to recover the service traffic in case a failure or a degradation occur.
+
+Transport SIMAP reports the configuration of the mechanism as well as its status.
+
+In particular, after a failure or a degradation occurs, the service resiliency mechanism may be in a state which will not allow the transport network to recover any additional failure (for example, the 1+1 protection mechanism is not able to recover from the failure of the secondary path after the primary path has failed and the traffic has switched to the secondary path).
+
+Based on the status of the resiliency mechanism reported by Transport SIMAP, the customer may request to reconfigure the service availability requirements (e.g., from 1+1 to always-1+1) or do nothing.
 
 > More discussion to be done based on the availability monetization description
 
@@ -160,7 +187,6 @@ TODO Security
 # IANA Considerations
 
 This document has no IANA actions.
-
 
 --- back
 
