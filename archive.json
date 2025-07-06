@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-03T01:46:35.382036+00:00",
+  "timestamp": "2025-07-06T01:54:25.780757+00:00",
   "repo": "italobusi/transport-simap",
   "labels": [
     {
@@ -50,5 +50,58 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOOpYPSc6dVfhe",
+      "title": "Text proposal for the initial draft",
+      "url": "https://github.com/italobusi/transport-simap/pull/1",
+      "state": "CLOSED",
+      "author": "italobusi",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-07-03T21:02:20Z",
+      "updatedAt": "2025-07-03T21:06:00Z",
+      "baseRepository": "italobusi/transport-simap",
+      "baseRefName": "main",
+      "baseRefOid": "b0e518267c36e626f3e1801449e6dcb7cf732ddd",
+      "headRepository": "italobusi/transport-simap",
+      "headRefName": "initial-draft",
+      "headRefOid": "ab911947cdd938dc0d4acc587439b3afe8809d08",
+      "closedAt": "2025-07-03T21:05:02Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOOpYPSc6dVsSo",
+      "title": "Text proposal for the initial draft",
+      "url": "https://github.com/italobusi/transport-simap/pull/2",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-07-03T21:31:04Z",
+      "updatedAt": "2025-07-03T21:31:04Z",
+      "baseRepository": "italobusi/transport-simap",
+      "baseRefName": "main",
+      "baseRefOid": "0056642129c96b3bb6fd3900da8cb07655b71526",
+      "headRepository": "italobusi/transport-simap",
+      "headRefName": "initial-draft",
+      "headRefOid": "8b6966f0a05e63e603fb9055179dd38bdc8e6ddb",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
