@@ -5,7 +5,11 @@
 Network Management Operations                                    I. Busi
 Internet-Draft                                                  H. Zheng
 Intended status: Informational                       Huawei Technologies
-Expires: 4 January 2026                                      3 July 2025
+Expires: 8 January 2026                                          X. Zhao
+                                                                 X. Zhao
+                                                                   Y. Xu
+                                                                   CAICT
+                                                             7 July 2025
 
 
   Applicability of Service & Infrastructure Maps (SIMAP) to Transport
@@ -53,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 January 2026.
+   This Internet-Draft will expire on 8 January 2026.
 
 Copyright Notice
 
@@ -362,9 +366,9 @@ Table of Contents
               Hu, T., Contreras, L. M., Wu, Q., Davis, N., and C. Feng,
               "A YANG Data Model for Network Incident Management", Work
               in Progress, Internet-Draft, draft-ietf-nmop-network-
-              incident-yang-04, 14 June 2025,
+              incident-yang-05, 6 July 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-nmop-
-              network-incident-yang-04>.
+              network-incident-yang-05>.
 
    [I-D.ietf-nmop-terminology]
               Davis, N., Farrel, A., Graf, T., Wu, Q., and C. Yu, "Some
@@ -391,3 +395,20 @@ Authors' Addresses
    Guangdong, 523808
    China
    Email: zhenghaomian@huawei.com
+
+
+   Xing Zhao
+   CAICT
+   China
+   Email: zhaoxing@caict.ac.cn
+
+
+   Xing Zhao
+   CAICT
+   China
+   Email: zhaoxing@caict.ac.cn
+
+
+   Yunbin Xu
+   CAICT
+   Email: xuyunbin@caict.ac.cn
