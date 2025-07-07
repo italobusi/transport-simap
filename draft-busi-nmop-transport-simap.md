@@ -37,6 +37,20 @@ author:
     code: 523808
     country: China
     email: zhenghaomian@huawei.com
+  -
+    name: Xing Zhao
+    organization: CAICT
+    email: zhaoxing@caict.ac.cn
+    country: China
+  -
+    name: Xing Zhao
+    organization: CAICT
+    email: zhaoxing@caict.ac.cn
+    country: China
+  -
+    name: Yunbin Xu
+    org: CAICT
+    email: xuyunbin@caict.ac.cn
 
 normative:
 
