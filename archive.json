@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-06T01:54:25.780757+00:00",
+  "timestamp": "2025-07-08T01:47:14.415074+00:00",
   "repo": "italobusi/transport-simap",
   "labels": [
     {
@@ -82,24 +82,26 @@
       "id": "PR_kwDOOpYPSc6dVsSo",
       "title": "Text proposal for the initial draft",
       "url": "https://github.com/italobusi/transport-simap/pull/2",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "italobusi",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-07-03T21:31:04Z",
-      "updatedAt": "2025-07-03T21:31:04Z",
+      "updatedAt": "2025-07-07T08:07:30Z",
       "baseRepository": "italobusi/transport-simap",
       "baseRefName": "main",
       "baseRefOid": "0056642129c96b3bb6fd3900da8cb07655b71526",
       "headRepository": "italobusi/transport-simap",
       "headRefName": "initial-draft",
-      "headRefOid": "8b6966f0a05e63e603fb9055179dd38bdc8e6ddb",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "a07ab8a60e3a786f955fa7dbb62f252d31ef2c43",
+      "closedAt": "2025-07-07T08:07:30Z",
+      "mergedAt": "2025-07-07T08:07:30Z",
+      "mergedBy": "italobusi",
+      "mergeCommit": {
+        "oid": "ef570d6323f8cdabc9b7ffdb8a24fbef112a42ad"
+      },
       "comments": [],
       "reviews": []
     }
