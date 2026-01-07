@@ -43,11 +43,6 @@ author:
     email: zhaoxing@caict.ac.cn
     country: China
   -
-    name: Xing Zhao
-    organization: CAICT
-    email: zhaoxing@caict.ac.cn
-    country: China
-  -
     name: Yunbin Xu
     org: CAICT
     email: xuyunbin@caict.ac.cn
