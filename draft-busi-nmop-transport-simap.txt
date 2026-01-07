@@ -6,7 +6,6 @@ Network Management Operations                                    I. Busi
 Internet-Draft                                                  H. Zheng
 Intended status: Informational                       Huawei Technologies
 Expires: 11 July 2026                                            X. Zhao
-                                                                 X. Zhao
                                                                    Y. Xu
                                                                    CAICT
                                                           7 January 2026
@@ -397,12 +396,6 @@ Authors' Addresses
    Guangdong, 523808
    China
    Email: zhenghaomian@huawei.com
-
-
-   Xing Zhao
-   CAICT
-   China
-   Email: zhaoxing@caict.ac.cn
 
 
    Xing Zhao
