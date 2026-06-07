@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-06-04T04:11:30.115481+00:00",
+  "timestamp": "2026-06-07T04:05:22.568595+00:00",
   "repo": "italobusi/transport-simap",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 3,
+      "id": "I_kwDOOpYPSc8AAAABEVu5eA",
+      "title": "Use cases where Transport SIMAP is expected",
+      "url": "https://github.com/italobusi/transport-simap/issues/3",
+      "state": "OPEN",
+      "author": "yujitochio",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "  \n\nHere is my thought for use cases where Transport SIMAP is expected.\n\n**WDM path over multidomain** \n\nAs increasing demand for optical path (WDM path) that enables low-latency and high bandwidth for service providers, provisioning WDM path over multi operators/domains are being investigated. [1] [2]\n\nTo provide such an end-to-end WDM path, management and control system (MCS) of these operators or domains should be coordinated to each other,  but an operator may not expose to another operator the details of its WDM network system that includes NE (transponders) , topologies, and inventories, but only abstracted information can be exposed \n\nBy Transport SIMAP that enables to abstraction and virtualization of the network,  an operator can coordinate its physical networks with Transport SIMAP created network of another operator, an end-to-end WDM path that satisfies SLA can be created.\n\n---\n**Pre-testing an equipment for upgrading, changing configuration or fault analysis**\n\nIn operating (transport) network, network operator would like to upgrade (replace) some equipment for better operation.\n\nBut shutting down the equipment, even a part of it, may impacts running network operation so that  pre-testing is required before this upgrade.\n\n Transport SIMAP can take this pre-testing and obtain the required sequence of configuration in the network during the upgrade to minimizing service suspension, as Transport SIMAP can create a map that a new equipment (i.e, an new object) is visually implemented to current network with it configuration/\n\nSimilar approach could be applicable to fault analysis. A suspected NE could be virtually tested to confirm the fault (why/where/how it happened) and it would be save OPEX.",
+      "createdAt": "2026-06-04T05:48:39Z",
+      "updatedAt": "2026-06-04T05:48:39Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
