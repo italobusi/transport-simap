@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-06-07T04:05:22.568595+00:00",
+  "timestamp": "2026-06-14T04:14:27.171629+00:00",
   "repo": "italobusi/transport-simap",
   "labels": [
     {
@@ -31,7 +31,7 @@
     {
       "name": "help wanted",
       "description": "Extra attention is needed",
-      "color": "008672"
+      "color": "d93f0b"
     },
     {
       "name": "invalid",
@@ -47,6 +47,31 @@
       "name": "wontfix",
       "description": "This will not be worked on",
       "color": "ffffff"
+    },
+    {
+      "name": "wait-sub-issue",
+      "description": "Ready to be closed after all its sub-issues are closed",
+      "color": "c2e0c6"
+    },
+    {
+      "name": "wait-issue",
+      "description": "Waiting for one or more sub-issues or other issues to be closed before progress this issue further",
+      "color": "fef2c0"
+    },
+    {
+      "name": "wait-PR",
+      "description": "Waiting for PR to be merged before progress this issue further",
+      "color": "fef2c0"
+    },
+    {
+      "name": "need-discussion",
+      "description": "Need more discussion",
+      "color": "fbca04"
+    },
+    {
+      "name": "agreed",
+      "description": "Resolution agreed: need extra actions (e.g., mail or PR merge)",
+      "color": "0e8a16"
     }
   ],
   "issues": [
@@ -59,12 +84,71 @@
       "author": "yujitochio",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
-      "labels": [],
+      "labels": [
+        "wait-sub-issue"
+      ],
       "body": "  \n\nHere is my thought for use cases where Transport SIMAP is expected.\n\n**WDM path over multidomain** \n\nAs increasing demand for optical path (WDM path) that enables low-latency and high bandwidth for service providers, provisioning WDM path over multi operators/domains are being investigated. [1] [2]\n\nTo provide such an end-to-end WDM path, management and control system (MCS) of these operators or domains should be coordinated to each other,  but an operator may not expose to another operator the details of its WDM network system that includes NE (transponders) , topologies, and inventories, but only abstracted information can be exposed \n\nBy Transport SIMAP that enables to abstraction and virtualization of the network,  an operator can coordinate its physical networks with Transport SIMAP created network of another operator, an end-to-end WDM path that satisfies SLA can be created.\n\n---\n**Pre-testing an equipment for upgrading, changing configuration or fault analysis**\n\nIn operating (transport) network, network operator would like to upgrade (replace) some equipment for better operation.\n\nBut shutting down the equipment, even a part of it, may impacts running network operation so that  pre-testing is required before this upgrade.\n\n Transport SIMAP can take this pre-testing and obtain the required sequence of configuration in the network during the upgrade to minimizing service suspension, as Transport SIMAP can create a map that a new equipment (i.e, an new object) is visually implemented to current network with it configuration/\n\nSimilar approach could be applicable to fault analysis. A suspected NE could be virtually tested to confirm the fault (why/where/how it happened) and it would be save OPEX.",
       "createdAt": "2026-06-04T05:48:39Z",
-      "updatedAt": "2026-06-04T05:48:39Z",
+      "updatedAt": "2026-06-11T13:48:58Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOOpYPSc8AAAABFKAH6Q",
+      "title": "New UC: Pre-testing an equipment for upgrading, changing configuration or fault analysis",
+      "url": "https://github.com/italobusi/transport-simap/issues/4",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "yujitochio",
+        "italobusi"
+      ],
+      "labels": [
+        "agreed"
+      ],
+      "body": "> **Pre-testing an equipment for upgrading, changing configuration or fault analysis**\n> \n> In operating (transport) network, network operator would like to upgrade (replace) some equipment for better operation.\n> \n> But shutting down the equipment, even a part of it, may impacts running network operation so that pre-testing is required before this upgrade.\n> \n> Transport SIMAP can take this pre-testing and obtain the required sequence of configuration in the network during the upgrade to minimizing service suspension, as Transport SIMAP can create a map that a new equipment (i.e, an new object) is visually implemented to current network with it configuration/\n> \n> Similar approach could be applicable to fault analysis. A suspected NE could be virtually tested to confirm the fault (why/where/how it happened) and it would be save OPEX.\n",
+      "createdAt": "2026-06-11T13:38:48Z",
+      "updatedAt": "2026-06-11T13:52:18Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "OWNER",
+          "body": "I think this makes sense: we can add a new paragraph describing it\n\nI will prepare a PR for your review in the next few days\n\n- [ ] @yujitochio are you willing to join as co-author?",
+          "createdAt": "2026-06-11T13:52:18Z",
+          "updatedAt": "2026-06-11T13:52:18Z"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOOpYPSc8AAAABFKAWmw",
+      "title": "New UC: WDM path over multidomain",
+      "url": "https://github.com/italobusi/transport-simap/issues/5",
+      "state": "OPEN",
+      "author": "italobusi",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "yujitochio"
+      ],
+      "labels": [
+        "need-discussion"
+      ],
+      "body": "> **WDM path over multidomain**\n> \n> As increasing demand for optical path (WDM path) that enables low-latency and high bandwidth for service providers, provisioning WDM path over multi operators/domains are being investigated. [1] [2]\n> \n> To provide such an end-to-end WDM path, management and control system (MCS) of these operators or domains should be coordinated to each other, but an operator may not expose to another operator the details of its WDM network system that includes NE (transponders) , topologies, and inventories, but only abstracted information can be exposed\n> \n> By Transport SIMAP that enables to abstraction and virtualization of the network, an operator can coordinate its physical networks with Transport SIMAP created network of another operator, an end-to-end WDM path that satisfies SLA can be created.\n",
+      "createdAt": "2026-06-11T13:39:19Z",
+      "updatedAt": "2026-06-11T13:55:07Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "italobusi",
+          "authorAssociation": "OWNER",
+          "body": "Do you have some references describing this scenario?\n\nIt seems that's was your intention with \"[1] [2]\" but no reference is provided\n\nI think we need to understand the details better: I am not really sure that without a 3R at the edge of network domains, it is really possible to manage a WDM path through abstraction and virtualization because of the physical characteristics of the WDM optical signal and the requirements to have a detailed view of the network resources to perform end-to-end WDM path computation.",
+          "createdAt": "2026-06-11T13:55:07Z",
+          "updatedAt": "2026-06-11T13:55:07Z"
+        }
+      ]
     }
   ],
   "pulls": [
