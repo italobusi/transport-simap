@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-06-14T04:14:27.171629+00:00",
+  "timestamp": "2026-06-23T03:41:15.018755+00:00",
   "repo": "italobusi/transport-simap",
   "labels": [
     {
@@ -110,15 +110,22 @@
       ],
       "body": "> **Pre-testing an equipment for upgrading, changing configuration or fault analysis**\n> \n> In operating (transport) network, network operator would like to upgrade (replace) some equipment for better operation.\n> \n> But shutting down the equipment, even a part of it, may impacts running network operation so that pre-testing is required before this upgrade.\n> \n> Transport SIMAP can take this pre-testing and obtain the required sequence of configuration in the network during the upgrade to minimizing service suspension, as Transport SIMAP can create a map that a new equipment (i.e, an new object) is visually implemented to current network with it configuration/\n> \n> Similar approach could be applicable to fault analysis. A suspected NE could be virtually tested to confirm the fault (why/where/how it happened) and it would be save OPEX.\n",
       "createdAt": "2026-06-11T13:38:48Z",
-      "updatedAt": "2026-06-11T13:52:18Z",
+      "updatedAt": "2026-06-21T08:10:40Z",
       "closedAt": null,
       "comments": [
         {
           "author": "italobusi",
           "authorAssociation": "OWNER",
-          "body": "I think this makes sense: we can add a new paragraph describing it\n\nI will prepare a PR for your review in the next few days\n\n- [ ] @yujitochio are you willing to join as co-author?",
+          "body": "I think this makes sense: we can add a new paragraph describing it\n\nI will prepare a PR for your review in the next few days\n\n- [x] @yujitochio are you willing to join as co-author?",
           "createdAt": "2026-06-11T13:52:18Z",
-          "updatedAt": "2026-06-11T13:52:18Z"
+          "updatedAt": "2026-06-21T08:09:32Z"
+        },
+        {
+          "author": "yujitochio",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Thanks @italobusi \nJoining me is ok :-)",
+          "createdAt": "2026-06-21T08:10:40Z",
+          "updatedAt": "2026-06-21T08:10:40Z"
         }
       ]
     },
